@@ -2,13 +2,13 @@
 your friendly illegal horse gambling wager printing REST API for the Epson TM-T88III.
 
 ## Setup
-Clone this repository and navigate 
+Clone this repository and navigate into the folder
 ```bash
-git clone <url>
+git clone https://github.com/schnea/sturmico.git
 cd sturmico
 ```
 
-Install all dependencies with `uv`:
+Install all dependencies with `uv` (https://docs.astral.sh/uv/):
 ```bash
 uv sync
 ```
