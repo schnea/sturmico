@@ -19,12 +19,14 @@ def health():
     return {"message": "Hello World"}
 
 
-@app.get("/print/{horse_no}/{horse}/{amount}")
-def read_item(horse_no: int, horse: str, amount: int):
+@app.get("/print/{race_no}/{horse_no}/{horse}/{amount}")
+def read_item(race_no:int, horse_no: int, horse: str, amount: int):
     """Seiko Epson Corp. Receipt Printer (EPSON TM-T88III)"""
+    horse_img = "horse.png" if race_no <= 1 else "horsereverse.png"
     # p.text("Hello World\n")
     p.image("sturmico.png")
-    p.image("horse.png")
+    p.image(horse_img)
+    p.text(f"\nRennen {race_no} \n")
     p.text(f"\n#{horse_no} \n")
     p.text(f"{horse}\n")
     p.text(f"{amount} Ohm\n")
