@@ -12,6 +12,7 @@ p = Serial(
     dsrdtr=True,
     profile="TM-T88III",
 )
+p.set(align="center")
 
 
 @app.get("/health")
